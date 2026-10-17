@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yujin Lee</title>
+  <meta name="description" content="Yujin Lee — Ph.D. student in Electrical and Electronic Engineering at Nanyang Technological University, Singapore.">
+  <meta property="og:title" content="Yujin Lee">
+  <meta property="og:description" content="Ph.D. student in EEE at Nanyang Technological University, Singapore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- 공주방 테마: 아래 주석을 풀면 켜집니다 -->
+  <!-- <link rel="stylesheet" href="princess.css"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23b0607f'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Georgia,serif'>YL</text></svg>">
+</head>
+<body>
+  <div class="page">
+
+    <!-- ============ 왼쪽: 프로필 ============ -->
+    <aside class="profile">
+      <!-- 프로필 사진: 아래 <img> 를 늘리거나 줄이면 됩니다. 2장 이상이면 휘리릭 돌아가며 넘어가고,
+           클릭·스와이프·점으로 넘길 수 있습니다. 파일이 없는 사진은 자동으로 빠집니다 -->
+      <div class="avatar-wrap">
+        <div class="avatar" id="avatar" title="Click or swipe">
+          <img src="images/profile-2.jpg" alt="Yujin Lee">
+          <img src="images/profile-3.jpg" alt="Yujin Lee">
+          <span aria-hidden="true">YL</span>
+        </div>
+        <!-- 시샤: images/shisa.png 를 넣으면 사진 옆에 앉아 있습니다 (오른쪽 아래) -->
+        <img class="mascot" src="images/shisa.png" alt="" aria-hidden="true" onerror="this.remove()">
+        <!-- 시나모롤: images/cinnamoroll.png -->
+        <img class="mascot mascot-left" src="images/cinnamoroll.png" alt="" aria-hidden="true" onerror="this.remove()">
+      </div>
+      <div class="avatar-dots" id="avatar-dots"></div>
+
+      <h1>Yujin Lee</h1>
+      <p class="name-ko">이유진</p>
+      <p class="role">Ph.D. Student<br>
+        Electrical and Electronic Engineering<br>
+        Nanyang Technological University<br>
+        Singapore</p>
+      <p class="role">Advisor: <a href="https://sites.google.com/view/tonykimntu/professor">Prof. Tony Tae-Hyoung Kim</a><br>
+        <a href="https://sites.google.com/view/tonykimntu">NICE Lab</a></p>
+
+      <ul class="links">
+        <li><a href="mailto:ratias0923@ewhain.net">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/yujinlee-ewha/">LinkedIn</a></li>
+        <!-- 있으면 주석 풀기 -->
+        <!-- <li><a href="https://scholar.google.com/citations?user=TODO">Google Scholar</a></li> -->
+        <!-- <li><a href="https://github.com/TODO">GitHub</a></li> -->
+        <!-- <li><a href="cv.pdf">CV</a></li> -->
+      </ul>
+    </aside>
+
+    <!-- ============ 오른쪽: 본문 ============ -->
+    <main>
+
+      <!-- 학회 배너: data-until 날짜가 지나면 자동으로 숨겨집니다. 다음 학회 때 문구·날짜만 바꾸면 됩니다 -->
+      <aside class="see-you" data-until="2026-11-05">
+        <p class="see-you-title">See you in Athens! 🇬🇷</p>
+        <p>I'll be presenting <em>Despoina</em> at <strong>MICRO 2026</strong>,
+          Oct 31 – Nov 4, Athens, Greece. Come say hi!</p>
+      </aside>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a Ph.D. student in the School of Electrical and Electronic Engineering at
+          <strong>Nanyang Technological University (NTU), Singapore</strong>, which I joined in August 2025. I am a member of the
+          <a href="https://sites.google.com/view/tonykimntu">NICE Lab</a>, advised by
+          Prof. Tony Tae-Hyoung Kim. My research focuses on computing-in-memory and
+          energy-efficient hardware accelerators for machine learning.
+        </p>
+        <p>
+          Before NTU, I earned my B.S. in Electronic and Electrical Engineering from
+          <strong>Ewha Womans University</strong>. As an undergraduate researcher, I designed analog and digital
+          computing-in-memory circuits for MAC acceleration and studied Lissajous scanning for MEMS LiDAR mirrors.
+          I also designed CMOS inverter transimpedance amplifiers through tapeout, and was a research intern at
+          HyperAccel. Outside the lab, I founded XLetter, an interactive web novel platform.
+        </p>
+        <p class="interests">
+          <span>Research interests</span>
+          <em>Computing-in-Memory for ML</em> <em>Energy-Efficient ML Accelerators</em> <em>Neural Network Accelerators</em>
+        </p>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <!-- 최신 소식이 위로. 형식: <li><time>YYYY.MM</time><span>내용</span></li> -->
+        <ul class="news">
+          <li><time>2026.07</time><span>Our paper on dynamic GNN acceleration, <em>Despoina</em>, was accepted to <strong>MICRO 2026</strong>.</span></li>
+          <li><time>2025.08</time><span>Started my Ph.D. in EEE at NTU Singapore.</span></li>
+          <li><time>2025.06</time><span>Joined HyperAccel as a research intern.</span></li>
+          <li><time>2025.02</time><span>Graduated from Ewha Womans University (B.S.).</span></li>
+          <li><time>2024.11</time><span>Presented two posters at the IEIE 2024 Autumn Conference.</span></li>
+          <li><time>2024.09</time><span>Won 3rd place at the 2024 Korea Student Semiconductor IC Design Contest, and the Corporate Special Award (Scientific Analog) at the 25th Korea Semiconductor Design Competition.</span></li>
+          <li><time>2024.07</time><span>Presented our inverter TIA paper at ITC-CSCC 2024.</span></li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <!-- 새 논문은 해당 그룹 맨 위에 <li> 블록 복사해서 추가. 본인 이름은 <b>Y. Lee</b> 로 굵게 -->
+        <h3>International Conferences</h3>
+        <ol class="pubs">
+          <li>
+            <p class="title">Despoina: Depth-Amortized Incremental Inference for Deep Dynamic GNN Acceleration</p>
+            <p class="authors"><b>Y. Lee</b>, M. Jang, J.-H. Kim, and T. Kim</p>
+            <p class="venue"><em>IEEE/ACM International Symposium on Microarchitecture (MICRO)</em>, Athens, Greece, Oct. 2026</p>
+          </li>
+          <li>
+            <p class="title">An AR/VR SoC with Dual-Mode Gaze Guided Perception and Few-Shot Keyword Spotting</p>
+            <p class="authors">Y. Lu, J. Qian, A. Li, Z. Li, R. Mao, Y. Shi, <b>Y. Lee</b>, T. Liu, J. Li, S. Cao, C. Yang, J. Zhou, W. Shan, and T. Kim</p>
+            <p class="venue"><em>IEEE European Solid-State Electronics Research Conference (ESSERC)</em>, Palma de Mallorca, Spain, Sept. 2026</p>
+          </li>
+          <li>
+            <p class="title">A High-Gain, Low-Power CMOS Inverter Transimpedance Amplifier</p>
+            <!-- TODO: 공저자 -->
+            <p class="authors"><b>Y. Lee</b> et al.</p>
+            <p class="venue"><em>International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)</em>, Jul. 2024</p>
+          </li>
+        </ol>
+        <h3>Domestic Journals</h3>
+        <ol class="pubs" start="4">
+          <li>
+            <p class="title">ChaCha20 암호화를 위한 4.56 pJ/b 에너지 효율의 180nm CMOS 공정 SRAM 기반 CIM</p>
+            <p class="title-en">A 4.56 pJ/b Energy-Efficient SRAM-Based CIM in 180nm CMOS for ChaCha20 Encryption</p>
+            <p class="authors"><b>Y. Lee</b> et al.</p>
+            <p class="venue"><em>Journal of the Institute of Electronics and Information Engineers (IEIE)</em>, Nov. 2024</p>
+          </li>
+          <li>
+            <p class="title">고이득, 저잡음 CMOS 인버터 트랜스임피던스 증폭기</p>
+            <p class="title-en">A High-Gain, Low-Noise CMOS Inverter Transimpedance Amplifier</p>
+            <p class="authors"><b>Y. Lee</b> et al.</p>
+            <p class="venue"><em>Journal of the Institute of Electronics and Information Engineers (IEIE)</em>, Nov. 2024</p>
+          </li>
+          <li>
+            <p class="title">저전력 CMOS Inverter Transimpedance Amplifier</p>
+            <p class="title-en">A Low-Power CMOS Inverter Transimpedance Amplifier</p>
+            <p class="authors"><b>Y. Lee</b> et al.</p>
+            <p class="venue"><em>Journal of the Institute of Electronics and Information Engineers (IEIE)</em>, Jun. 2024</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <dl class="timeline">
+          <div>
+            <dt>2025 – present</dt>
+            <dd><strong>Ph.D.</strong>, Electrical and Electronic Engineering<br>
+              <span class="sub">Nanyang Technological University, Singapore · Advisor: Prof. Tony Tae-Hyoung Kim</span></dd>
+          </div>
+          <div>
+            <dt>2021 – 2025</dt>
+            <dd><strong>B.S.</strong>, Electronic and Electrical Engineering<br>
+              <span class="sub">Ewha Womans University, Seoul · GPA 3.90 / 4.3</span></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="experience">
+        <h2>Research Experience</h2>
+        <dl class="timeline">
+          <div>
+            <dt>2025.06 – 2025.08</dt>
+            <dd><strong>Research Intern</strong>, HyperAccel</dd>
+          </div>
+          <div>
+            <dt>2023.12 – 2024.02</dt>
+            <dd><strong>Undergraduate Researcher</strong>, Digital System Architecture Lab, Ewha Womans University<br>
+              <span class="sub">Advisor: Prof. Ji-Hoon Kim. Designed analog and digital computing-in-memory circuits to accelerate multiply-accumulate (MAC) operations.</span></dd>
+          </div>
+          <div>
+            <dt>2023.03 – 2024.02</dt>
+            <dd><strong>Undergraduate Researcher</strong>, Micro and Nano Systems Lab, Ewha Womans University<br>
+              <span class="sub">Advisor: Prof. Chang-Hyeon Ji. Studied Lissajous trajectories of MEMS scanning mirrors for LiDAR and wrote code that finds the exact trajectory intersections at any frequency. Validated MEMS scanning mirrors on site at WithMEMS.</span></dd>
+          </div>
+          <div>
+            <dt>2022.07 – 2022.08</dt>
+            <dd><strong>Research Assistant Intern</strong>, DREAMPLUS (Hanwha Life)<br>
+              <span class="sub">Researched blockchain-based Decentralized Autonomous Organizations (DAOs) and presented the findings to Hanwha Life.</span></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="talks">
+        <h2>Presentations</h2>
+        <dl class="timeline">
+          <div>
+            <dt>2024.11</dt>
+            <dd>IEIE 2024 Autumn Conference, two poster presentations on semiconductors</dd>
+          </div>
+          <div>
+            <dt>2024.07</dt>
+            <dd>ITC-CSCC 2024, poster session</dd>
+          </div>
+          <div>
+            <dt>2024.06</dt>
+            <dd>IEIE 2024 Summer Conference, poster presentation on semiconductors</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="honors">
+        <h2>Honors &amp; Awards</h2>
+        <dl class="timeline">
+          <div>
+            <dt>2024.11</dt>
+            <dd>Participation Prize, 2024 National University AI Semiconductor Design Competition</dd>
+          </div>
+          <div>
+            <dt>2024.09</dt>
+            <dd>Corporate Special Award (Scientific Analog), 25th Korea Semiconductor Design Competition</dd>
+          </div>
+          <div>
+            <dt>2024.09</dt>
+            <dd>3rd Place, 2024 Korea Student Semiconductor IC Design Contest</dd>
+          </div>
+          <div>
+            <dt>2023.08</dt>
+            <dd>Global Bootcamp Award, LBank Labs</dd>
+          </div>
+          <div>
+            <dt>2022.11</dt>
+            <dd>2nd Place (DAO Division), Klaymakers22 Global Hackathon</dd>
+          </div>
+          <div>
+            <dt>2022.06</dt>
+            <dd>1st Place, EwhaChain Idea Contest</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <dl class="timeline">
+          <div>
+            <dt>Hardware</dt>
+            <dd>Verilog, Cadence EDA (Virtuoso), OpenROAD, Vivado</dd>
+          </div>
+          <div>
+            <dt>Programming</dt>
+            <dd>Python, C/C++, MATLAB, React</dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Korean, English, Chinese</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="beyond">
+        <h2>Beyond Research</h2>
+        <dl class="timeline">
+          <div>
+            <dt>2022.01 – 2025.05</dt>
+            <dd><strong>Founder &amp; CEO</strong>, XLetter<br>
+              <span class="sub">Korea's first interactive web novel platform, where readers and writers shape the story together through real-time voting and branching narratives. Built on Klaytn, with membership NFTs for readers.</span></dd>
+          </div>
+          <div>
+            <dt>2024.04 – 2025.05</dt>
+            <dd><strong>Project Manager / Business Developer</strong>, Blockwave Labs<br>
+              <span class="sub">Managed DeFi products and built an automated investment bot using arbitrage and lending protocols.</span></dd>
+          </div>
+          <div>
+            <dt>2022.02 – 2023.07</dt>
+            <dd><strong>President &amp; Treasurer</strong>, EwhaChain (Ewha Womans University Blockchain Society)</dd>
+          </div>
+        </dl>
+      </section>
+
+      <footer>
+        <p>© <span id="y">2026</span> Yujin Lee · Last updated October 2026</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    // 프로필 사진 회전
+    (function () {
+      var box = document.getElementById('avatar');
+      var dotsEl = document.getElementById('avatar-dots');
+      var imgs = Array.prototype.slice.call(box.querySelectorAll('img'));
+      var i = 0, timer = null, busy = false;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function setup() {
+        imgs = imgs.filter(function (im) { return im.isConnected; });
+        imgs.forEach(function (im, k) { im.classList.toggle('on', k === i); });
+        dotsEl.innerHTML = '';
+        if (imgs.length < 2) return;
+        imgs.forEach(function (_, k) {
+          var d = document.createElement('button');
+          d.type = 'button';
+          d.setAttribute('aria-label', 'Photo ' + (k + 1));
+          d.addEventListener('click', function () { go(k); restart(); });
+          dotsEl.appendChild(d);
+        });
+        paintDots();
+        restart();
+      }
+      function paintDots() {
+        Array.prototype.forEach.call(dotsEl.children, function (d, k) { d.classList.toggle('on', k === i); });
+      }
+      function show(k) {
+        imgs[i].classList.remove('on'); i = k; imgs[i].classList.add('on'); paintDots();
+      }
+      function go(k, dir) {
+        if (busy || imgs.length < 2) return;
+        k = (k + imgs.length) % imgs.length;
+        if (k === i) return;
+        dir = dir || (k > i ? 1 : -1);
+        if (reduce || !box.animate) { show(k); return; }
+        busy = true;
+        box.animate([{ transform: 'rotateY(0)' }, { transform: 'rotateY(' + 90 * dir + 'deg)' }],
+                    { duration: 220, easing: 'ease-in' }).finished.then(function () {
+          show(k);
+          return box.animate([{ transform: 'rotateY(' + -90 * dir + 'deg)' }, { transform: 'rotateY(0)' }],
+                             { duration: 260, easing: 'cubic-bezier(.2,.8,.3,1.2)' }).finished;
+        }).then(function () { busy = false; });
+      }
+      function restart() {
+        clearInterval(timer);
+        if (imgs.length > 1 && !reduce) timer = setInterval(function () { go(i + 1, 1); }, 3500);
+      }
+
+      var x0 = null;
+      box.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+      box.addEventListener('pointerup', function (e) {
+        if (x0 === null) return;
+        var dx = e.clientX - x0; x0 = null;
+        if (Math.abs(dx) > 30) go(i + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1); else go(i + 1, 1);
+        restart();
+      });
+      box.addEventListener('mouseenter', function () { clearInterval(timer); });
+      box.addEventListener('mouseleave', restart);
+
+      var pending = imgs.length;
+      imgs.forEach(function (im) {
+        function done() { if (--pending === 0) setup(); }
+        if (im.complete) { if (!im.naturalWidth) im.remove(); done(); }
+        else {
+          im.addEventListener('load', done);
+          im.addEventListener('error', function () { im.remove(); done(); });
+        }
+      });
+    })();
+
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.querySelectorAll('[data-until]').forEach(function (el) {
+      if (new Date() >= new Date(el.dataset.until)) el.remove();
+    });
+  </script>
+</body>
+</html>
