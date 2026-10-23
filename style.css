@@ -76,7 +76,9 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
   position: absolute; right: -18px; bottom: -6px;
   width: 64px; height: auto;
   animation: bob 2.8s ease-in-out infinite;
-  pointer-events: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none; -webkit-user-drag: none;
 }
 @keyframes bob { 50% { transform: translateY(-5px) rotate(-4deg); } }
 .mascot-left {

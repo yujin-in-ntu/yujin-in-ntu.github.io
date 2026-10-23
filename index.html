@@ -362,6 +362,23 @@
       });
     })();
 
+    // 시샤·시나모롤: 클릭하면 폴짝 (둥실거리는 transform 과 겹치지 않게 translate/scale 로 움직임)
+    document.querySelectorAll('.mascot').forEach(function (m) {
+      var jump = null;
+      m.addEventListener('click', function () {
+        if (!m.animate || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        if (jump) jump.cancel();
+        var h = m.classList.contains('mascot-left') ? 46 : 38;
+        jump = m.animate([
+          { translate: '0 0',           scale: '1 1',       easing: 'ease-out' },
+          { translate: '0 2px',         scale: '1.15 0.85', easing: 'ease-out', offset: 0.15 },
+          { translate: '0 -' + h + 'px', scale: '0.92 1.1', easing: 'ease-in',  offset: 0.5 },
+          { translate: '0 0',           scale: '1.12 0.88', easing: 'ease-out', offset: 0.82 },
+          { translate: '0 0',           scale: '1 1' }
+        ], { duration: 650 });
+      });
+    });
+
     document.getElementById('y').textContent = new Date().getFullYear();
     document.querySelectorAll('[data-until]').forEach(function (el) {
       if (new Date() >= new Date(el.dataset.until)) el.remove();
